@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        video {
+            margin: 5%;
+            height: 50vh; /* 50% of the viewport height */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+    </style>
+    <title>04 Mastering HTML</title>
+</head>
+<body>
+    <!--Implement good practices from the get go - Learn Responsive Web Design-->
+    <!--Improve accessibility and make the content easier to understand for both search engines and users. Make sure you use the recommended tags/elements-->
+    <header>
+
+    </header>
+    <main>
+        <video controls>
+            <source src="assets/cool.mp4" type="video/mp4">
+            <!--Note: different media formats are needed for compatibility with different browsers and devices-->
+            video is not supported.
+        </video>
+        <!--Tags that give information about what they contain like the <header> <main> <footer> and <article> are called sementic tags. They give additional information-->
+        <article>
+            <h1>This is an article</h1>
+            <p>Here is some independent, self-contained piece of content. What I write here needs to make sense on its own.</p>
+        </article>
+        <section> <!--This usually includes a heading-->
+            <h2>Here's I'll break down my content into parts</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rem labore ipsam! Fugiat doloribus, quasi placeat nesciunt facere perspiciatis rem, voluptates odio obcaecati id ab doloremque dolorum repudiandae numquam eius!</p>
+        </section>
+        <aside>
+            <h3>Here's my secondary but somewhat related content</h3>
+            <p>Stuff...</p>
+        </aside>
+        <button style="background-color:green; font-size:large">Click me</button>
+        <h2 style="border:dotted">Heading 2</h2>
+        <hr>
+        <button onclick="alert('Welcome to JS')">Click me</button>
+        <button>Button A</button>
+        <button>Button B</button><br>
+        <button>Button C</button><br>
+        <button>Button D</button><br>
+        <button>Button E</button>
+        <img id="robot" 
+src="https://blob.sololearn.com/courses/robot-c.jpg">
+<button onclick="robot.src='http://www.sololearn.com/images/tree.jpg'">
+Show tree</button>
+        <hr>
+        <table style="border:solid">
+            <tr> 
+              <td style="border:solid">
+              C1</td>
+              <td style="border:solid">
+              C2</td>
+            </tr>
+            <tr> 
+              <td style="border:solid">
+              C3</td>
+              <td style="border:solid">
+              C4</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+              <th>Month</th>
+              <th>Budget($)</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>500</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>400</td>
+            </tr>
+            <tr>
+              <td colspan="2">Sum: 900</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+              <th>Month</th>
+              <th>Budget($)</th>
+              <th>Savings($)</th>
+            </tr>
+            <tr>
+              <td>January</td>
+              <td>500</td>
+              <td rowspan="2">150</td>
+            </tr>
+            <tr>
+              <td>February</td>
+              <td>400</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
